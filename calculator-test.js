@@ -1,6 +1,6 @@
 
 it('should calculate the monthly rate correctly', function () {
-    // ...
+    
     const values = {
         amount: 10000,
         years: 8,
@@ -11,7 +11,7 @@ it('should calculate the monthly rate correctly', function () {
   
   
   it("should return a result with 2 decimal places", function() {
-    // ..
+    
   });const values = {
     amount: 10043,
     years: 8,
@@ -29,5 +29,4 @@ it("should handle terribly high interest rates", function() {
   expect(calculateMonthlyPayment(values)).toEqual('82.50');
 });
 
-  /// etc
   

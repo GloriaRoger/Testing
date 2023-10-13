@@ -9,6 +9,8 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+  // Get the inputs from the DOM.
+  // Put some default values in the inputs
   function getCurrentUIValues() {
     return {
       amount: +(document.getElementById("loan-amount").value),
@@ -17,8 +19,6 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  // Get the inputs from the DOM.
-  // Put some default values in the inputs
   // Call a function to calculate the current monthly payment
   function setupIntialValues() {
       const values = { amount: 1000, years: 10, rate: 4.5};
@@ -57,4 +57,5 @@ window.addEventListener('DOMContentLoaded', function() {
     const monthlyUI = document.getElementById("monthly-payment");
   monthlyUI.innerText = "$" + monthly;
   }
+  
   
